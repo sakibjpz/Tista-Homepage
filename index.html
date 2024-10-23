@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tista Solutions | Software Development</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100" class="scrollspy-example">
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand animate__animated animate__fadeInLeft" href="#">Tista Solutions</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Parallax Effect -->
+    <section id="home" class="hero bg-primary text-white text-center py-5" style="background-image: url('img/hero-bg.jpg'); background-attachment: fixed; background-size: cover; background-position: center;">
+        <div class="container">
+            <h1 class="display-4 animate__animated animate__fadeInUp">Welcome to Tista Solutions</h1>
+            <p class="lead animate__animated animate__fadeInUp">We build software solutions that drive businesses forward.</p>
+            <a href="#services" class="btn btn-light btn-lg mt-3 animate__animated animate__pulse animate__infinite">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- About Us Section with Counters -->
+    <section id="about" class="about py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="animate__animated animate__fadeInDown">Who We Are</h2>
+            <p class="lead animate__animated animate__fadeInUp">At Tista Solutions, we are passionate about creating innovative software solutions that solve real-world challenges.</p>
+
+            <!-- Company Statistics with Counters -->
+            <div class="row text-center pt-4">
+                <div class="col-md-4">
+                    <h2 class="counter" data-target="100">0</h2>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="counter" data-target="50">0</h2>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="counter" data-target="10">0</h2>
+                    <p>Years in Business</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services bg-light py-5">
+        <div class="container">
+            <h2 class="text-center animate__animated animate__fadeInDown">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100 text-center shadow-sm animate__animated animate__zoomIn">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">We create dynamic websites and web applications to help you engage your audience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center shadow-sm animate__animated animate__zoomIn animate__delay-1s">
+                        <div class="card-body">
+                            <h5 class="card-title">Mobile App Development</h5>
+                            <p class="card-text">We develop mobile apps that provide seamless user experiences on both iOS and Android platforms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center shadow-sm animate__animated animate__zoomIn animate__delay-2s">
+                        <div class="card-body">
+                            <h5 class="card-title">Cloud Solutions</h5>
+                            <p class="card-text">We provide cloud solutions that enhance your business efficiency and scalability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section (Carousel) -->
+    <section id="testimonials" class="testimonials bg-dark text-white py-5">
+        <div class="container text-center">
+            <h2 class="animate__animated animate__fadeInDown">What Our Clients Say</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p>"Tista Solutions transformed our online presence with an amazing website and mobile app!"</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>"Their cloud solutions saved us significant operational costs. Highly recommend!"</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Form -->
+    <section id="contact" class="contact py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="animate__animated animate__fadeInDown">Get in Touch</h2>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Back-to-Top Button -->
+    <a href="#navbar" class="btn btn-primary back-to-top"><i class="bi bi-arrow-up-circle"></i></a>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-center text-white py-3">
+        <p>&copy; 2024 Tista Solutions. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
